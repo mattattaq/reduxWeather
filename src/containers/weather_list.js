@@ -33,7 +33,9 @@ class WeatherList extends Component {
 }
 
 function mapStateToProps({weather}) {
+  console.log(JSON.stringify(weather));
   return { weather }
+
 }
 
 export default connect(mapStateToProps)(WeatherList);
